@@ -1,0 +1,28 @@
+p,h1,h2,h3,h4,h5{
+	text-align: justify;
+}
+
+.card-title, h6{
+	font-weight: bolder !important;
+}
+
+section{
+	padding-bottom: 5px;
+}
+.teal-text {
+	color: #26a69a !important;
+}
+.carousel .indicators {
+    background: #26a69a;
+}
+
+.pt-25{
+	padding-top: 25px;
+}
+.pb-25{
+	padding-bottom: 25px;
+}
+.center-menu{
+	margin-left: 135px;
+    font-weight: 700;
+}

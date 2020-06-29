@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="converter.css">
+
+    <script>
+        function currencyConverter(valNum){
+        if(converter.usd.value <= 0)
+        window.alert("Enter Value Greaterthan 0");
+        else{
+        
+        document.getElementById("eur").value = (valNum*0.89);
+        document.getElementById("gbp").value = (valNum*0.81);
+        document.getElementById("taka").value = (valNum*84.91);
+        }
+        }
+    </script>
+
+</head>
+
+
+<body>
+
+<h1>Currency Converter</h1>
+
+<marquee>Welcome to the Online Currency Converter</marquee>
+<br><br>
+
+<form name="converter">
+
+<fieldset style="background-color: blanchedalmond;">
+
+<label>USD(American): </label>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+<input type="number" name="usd" required>
+ 
+<input type="button" value="Convert" onclick="currencyConverter(converter.usd.value)"><br><br>
+
+<label>EUR(European): </label>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<input id="eur"><br><br>
+
+<label>GBP(United kingdom): </label>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp 
+<input id="gbp"><br><br>
+
+<label>TAKA(Bangladesh): </label>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp 
+<input id="taka"><br><br>
+
+<input type="reset" value="Reset Form">
+
+<p align="center">You can press Reset Button for reseting the form</p>
+
+</fieldset>
+</form>
+</body>
+</html>
